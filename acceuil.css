@@ -1,0 +1,317 @@
+*{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Times New Roman';
+        position: none;
+        
+    }
+    header{
+        background-color:rgb(13, 104, 13);
+        padding: 20px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        height: 100px; 
+    }   
+    
+                         
+
+    .logo img{
+        height: 50px;
+    }
+    nav b a{
+        color: white;
+        border-radius: 10px;
+        transition: color 15s ease-in-out;
+        margin-right: 20px       ;
+    }
+    nav b a:hover{
+        background-color: black;
+        color: white;
+        margin-right: 10px;
+    }
+ 
+    .text-overlay h1{
+        color: white;
+        font-size: 24px;
+    }
+    section{ 
+          padding: 0px; 
+          margin-top: 0px;  
+      }
+    .row{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .row .col50{
+        position: relative;
+        width: 48%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .row .col50 h2{
+        margin-bottom: 20px;
+    }
+   h2{
+        color: white;
+    }
+
+    .titre-texte{
+        color: #000;
+        font-size: 2em;
+        font-weight: 300px;
+        text-transform: capitalize;
+    }
+
+    .titre-texte span{
+        color: rgb(13, 104, 13);
+        font-size: 1.5em;
+        font-weight: 700px;
+    }
+
+    .titre{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Evènement{
+        margin-top: -250px;
+    }
+
+    .Evènement .contenu{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .Evènement .contenu .box{
+        width: 300px;
+        margin: 20px;
+        border-radius: 30px;
+        
+    }
+
+    .Evènement .contenu .box .imbox{
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
+
+    .Evènement .contenu .box .imbox img{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        
+    }
+
+    
+    .imbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    button{
+       
+        border-radius: 5px;
+         width: 200px ;
+         height: 50px;
+         font-size: 1rem;
+         position: center;
+         color: white;
+         font-family: 'Times New Roman';
+         background-color:rgb(13, 104, 13);
+    }
+    .propos{
+        margin-top: 150px;
+        text-align: center;
+        background-color:white ;
+        text-decoration: black;
+    }
+    h2{
+        color: white;
+        font-size: 2.5rem;
+    }
+    p1{
+        color: white;
+        text-align: left;
+    }
+    .contenu1{
+        text-align: left;
+        margin-right: 700px;
+        font-size: 1.5rem;
+        margin-left: 40px;
+        margin-top: -450px;
+        margin-bottom: 200px;
+    }
+    .toff{
+        text-align: right;
+    }
+        
+    .footer{
+      
+        text-align: center;
+        background-color: rgb(13, 104, 13);
+
+    }
+    .paragraphe{
+        margin-bottom: 100px;
+    }
+    h3{
+        margin-top: -100px;
+        color: rgb(13, 104, 13);
+    }
+    .contenu2{
+        text-align: center;
+        margin-top: 300px;
+        background-color:#1E1F27 ;
+    }
+    .message{
+        margin-top: -100px;
+    }
+        
+    .form-container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 0px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: none;
+    }
+    
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: white;
+      animation:myanimation 3s infinite;
+    }
+    @keyframes myanimation{
+        0%{color:rgb(13, 104, 13);}
+        10%{color:#009140;}
+        25%{color:#009150;}
+        35%{color: #009160;}
+        50%{color:#009170;}
+        75%{color:#009180;}
+        100%{color:rgb(13, 104, 13);}
+        }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+     color: rgb(13, 104, 13);
+    }
+    
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="date"],
+    .form-group select {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      color: rgb(13, 104, 13);
+     
+    }
+    
+    .form-group select {
+      height: 30px;
+    }
+    
+    .form-group input[type="submit"] {
+      background-color: rgb(13, 104, 13);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .modal{
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        
+    }
+    .modal-content{
+        margin: 10% auto;
+        padding: 10px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 650px;
+        background-color: #e7e7e7;
+        
+        
+    } 
+    .close{
+        color: #aaa;
+        background-color: rgb(212, 18, 18);
+        float: right;
+        font-size: 30px;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 40px;
+        height: 30px;
+       
+    }
+    .closer:hover,.closer:focus{
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+
+    }
+    .logo-colum {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-colum img{
+        margin-bottom: 10px;
+        width: 30px;
+        height: auto;
+    }
+    .link{
+        font-size: 1.5rem;
+       text-align: left;
+        margin-left: 70px;
+        margin-top: -210px;
+        
+    }  
+    #accueil{
+        
+        filter: brightness(0.4);
+        color: white;
+    } 
+    .image-container{
+        text-align: center;
+        width: 100%;
+        object-fit: cover;
+        margin-right :100px;
+        font-family: 'Times New Roman';
+
+    }       
+  

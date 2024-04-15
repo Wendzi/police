@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prise de Rendez-vous - Carte Nationale d'Identité</title>
+  <style>
+    body {
+      font-family: 'Times New Roman';
+      background-color: #e7e7e7;
+
+    }
+    
+    .form-container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #e7e7e7;
+    }
+    
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      background-color: #e7e7e7;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="date"],
+    .form-group select {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+     
+    }
+    
+    .form-group select {
+      height: 30px;
+    }
+    
+    .form-group input[type="submit"] {
+      background-color: black;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Prise de Rendez-vous - Carte Nationale d'Identité</h2>
+    <form>
+      <div class="form-group">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+      </div>
+      <div class="form-group">
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Adresse e-mail :</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="date_rdv">Date souhaitée :</label>
+        <input type="date" id="date_rdv" name="date_rdv" required>
+      </div>
+      <div class="form-group">
+        <label for="heure_rdv">Heure souhaitée :</label>
+        <input type="time" id="heure_rdv" name="heure_rdv" required>
+      </div>
+      <div class="form-group">
+        <label for="commentaire">Commentaire :</label>
+        <textarea id="commentaire" name="commentaire" rows="4"></textarea>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Réserver le rendez-vous">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

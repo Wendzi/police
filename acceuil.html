@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ID CENTER</title>
+        <link rel = "stylesheet" href = "acceuil.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="" alt="logo">    
+            </div>
+            <nav class="navigation" style="background-size: 200vh;">
+                <b><a href="acceuil.html" style="font-size: 1.5rem;" >Accueil</a></b>
+                <b><a href="Formulaire-Connexion-main\index.html" style="font-size: 1.5rem;">Connexion</a></b>
+                <b><a href="#" style="font-size: 1.5rem;">A propos</a></b>
+                <b><a href="#" style="font-size: 1.5rem;">Contact</a></b>
+            </nav>
+        </header>
+        <div class = "image-container">
+        <img src="tof/SERVIR-CNI_2.png" alt="fullscren-image">
+       </div>
+       <div style="margin-top: -600px;"><figcaption class="titre-texte"style="height=20px;text-align: center;"><h2 style="text-align: center;;; font-size: 2rem; font-family: 'Times New Roman';margin-top: 300px;letter-spacing: 3px;background-color: white;">
+        meilleure plateforme de prise de rendez-vous<br> pour realisation de votre CNI</h2></figcaption>
+        <div class="contenu">
+            <div class="box">
+                <div class="imbox">
+     
+                    <button  onclick="openModal()" >Prendre  rendez-vous</button>
+                    <div id="myModal" class="modal" style="text-align: center;">
+                        <div class="modal-content">
+                             <span class="close" onclick="closeModal()">&times;</span>
+                             <div class="form-container">
+                                <h2>Prise de Rendez-vous - Carte Nationale d'Identité</h2>
+                                <form>
+                                  <div class="form-group">
+                                    <label for="nom">Nom :</label>
+                                    <input type="text" id="nom" name="nom" required>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="prenom">Prénom :</label>
+                                    <input type="text" id="prenom" name="prenom" required>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="email">Adresse e-mail :</label>
+                                    <input type="email" id="email" name="email" required>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="ville_rdv">ville souhaitée :</label>
+                                    <input type="ville" id="ville_rdv" name="ville_rdv" required>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="date_rdv">Date souhaitée :</label>
+                                    <input type="date" id="date_rdv" name="date_rdv" required>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="heure_rdv">Heure souhaitée :</label>
+                                    <input type="time" id="heure_rdv" name="heure_rdv" required>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="commentaire">Commentaire :</label>
+                                    <textarea id="commentaire" name="commentaire" rows="4"></textarea>
+                                  </div>
+                                  
+                      </td>
+                      <td>
+                        <input type="text" list="options">
+                        <datalist id="options">
+                                <option value="choisir">Choissisez un type de billet</option>
+                                <option value="concert">concert</option>
+                                <option value="parc">parc d'attraction</option>
+                                <option value="d'avion">d'avion</option>
+                                <option value="voiyage">de voiyage</option>
+                                <option value="ciéma">cinéma</option>
+                                <option value="Sport">sport</option>
+                                <option value="théatre">théatre</option>
+                        </datalist>
+                            <input type="text" id="otheroption" style="display: none;">
+                            <script type="text/javascript">
+                                function
+                             updateinput(selectElement)
+                             {
+                                 var otherOptionInput = document.getElementById("otherOption");
+                                 if(selectElement.value==="other"){
+                                     otherOptionInput.style.display="inline";
+                                 } else{
+                                     otherOptionInput.style.display = "none";
+ 
+                                 }
+                             }
+                            </script>
+                        </td>
+                                  <div class="form-group">
+                                    <input type="submit" value="Réserver le rendez-vous">
+                                  </div>
+                                </form>
+                              </div>
+                        </div>
+                      </div>
+                         
+                          <script>
+                              function openModal(){
+                                  var modal = document.getElementById('myModal');
+                                  modal.style.display = 'block';
+                              }
+                              function closeModal(){
+                                  var modal = document.getElementById('myModal');
+                                  modal.style.display = 'none';
+                              }
+                          </script>
+                </div>
+                <div class="text">
+                </div>
+            </div>
+    
+</section>  
+<section class="propos" id="propos">
+    <h2 style="color: rgb(13, 104, 13) ;margin-top: 170px;" ><b>ID CENTER une entreprise de prise de rendez-vous </b></h2>
+    <div style="text-align: right; margin-top: 50px; background-color: white;margin-right: 50px;">
+        <img src="tof/bureau1.jpg" alt="toff" class="ombre-image">    
+    </div>
+    
+   <div class="contenu1"> <h3><span>B</span>ienvenue sur ID CENTER</h3>
+
+    <p>Nous sommes fiers de vous offrir un service de prise de rendez-vous efficace et pratique pour l'étalissement de vos Cartes Nationales d'Identité (CNI). Chez [Nom de votre entreprise], nous comprenons l'importance d'avoir une CNI valide, que ce soit pour des raisons personnelles ou professionnelles.
+    
+    Notre plateforme a été conçue dans le but de simplifier le processus de prise de rendez-vous. Fini les longues attentes ou les appels téléphoniques interminables. Avec notre système convivial, vous pouvez prendre un rendez-vous en quelques clics, selon vos disponibilités.
+    
+    
+    . </p>
+        </div>
+      </section>
+<section style="height: 520px; background-color: #1E1F27 ;">
+    <div class="contenu2">
+    <h3 style="color: white;margin-bottom: 100px;font-size: 1.5rem;">Nous contacter</h3>
+</div>
+<div class="form-group" style="margin-left:100px;margin-top: 50px;">
+    <label style="color: white" for="Name">Nom :</label>
+    <input style="border-color:rgb(51, 51, 156);border-style:rgb(51, 51, 156) ; height: 30px; border-radius: 5px;background-color: rgba(255, 255, 255, 0.5);width: 300px; "type="text" value="Entrez votre Nom"id="Name" name="Name" required>
+  </div> 
+  <div class="form-group"  style="margin-left:100px;margin-top: 50px;">
+    <label style="color: white" for="Name">E-mail :</label>
+    <input style="border-color:rgb(51, 51, 156); height: 30px; border-radius: 5px;background-color: rgba(255, 255, 255, 0.5);width: 300px;" type="email" value="Entrez votre email" id="email" name="email" required>
+  </div>
+  <div class="form-group" style="text-align: right;margin-right: 100px;margin-top: -200px;">
+    <label style=" margin-right: 400px;color: white;" for= "message">Message :<br></label>
+    <textarea id="message"  name="message" rows="10" style="border-color:rgb(51, 51, 156);width: 400px;border-radius: 10px;background-color: rgba(255, 255, 255, 0.5);">Entrez votre Message</textarea>
+  </div>
+  <div style="text-align: center;">
+  <button style="text-align: center; margin-bottom: 100px; background-color: rgb(13, 104, 13);border-radius: 5px;width: 100px;height: 50px;">Envoyer</button>
+    </div>
+  <p style=" color: rgb(204, 198, 198);text-align: center;">En cas d'éventuelles difficultés contactez-nous pour plus d'informations........</p>
+</section>
+<section class="footer" id="footer" style="margin-top: 100px;">
+    <footer>
+        <div class="footer-content">
+            <h3>Coordonnees</h3>
+            <p2>Adresse:237 rue 11 eme</p2>
+            <p2>Tel:683-565-342</p2>
+            <p2>E-mail :
+                contact@exemple.com
+            </p2>
+
+        </div>
+        <div class="logo-colum">
+            <img src="tof/6(4).jpeg" alt="facebook" ><br>
+            <img src="tof/6 (1).jpeg" alt="instagram" ><br> 
+            <img src="tof/6 (2).jpeg " alt="whatsapp" ><br>
+            <img src="tof/6 (3).jpeg" alt="G-mail" >
+        </div>
+        <div class="link">
+            <nav>facebook</nav><br>
+            <nav>whatsapp</nav><br>
+            <nav>instagram</nav><br>
+            <nav>G-mail</nav>
+        </div>
+        <div style="margin-top: -150px;">
+            <nav style="font-size: 1.5rem;">Qui sommes nous</nav><br> 
+            <nav style="font-size: 1.5rem;">Nous contacter</nav><br><br><br>
+            <nav style="margin-top: 100px; ">Copyright Princess @2024</nav><br>
+        </div>
+        <div style="margin-top: -200px;text-align: right; margin-right: 20px;">
+            <nav style="font-size: 1.5rem;">Prendre rendez-vous</nav><br> 
+            <nav style="font-size: 1.5rem;">ID CENTER</nav><br><br><br>
+ 
+        </div>
+        <nav class="footer-nav"></nav>
+        <ul>
+            <li>
+                
+            </li>
+        </ul>
+    </footer>
+</section>
+    </body>
+</html>
